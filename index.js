@@ -112,18 +112,27 @@ function Baby(name, age, favoriteToy) {
     this.favoriteToy = favoriteToy;
 }
 Baby.prototype.play = function() {
-    return `Playing with ${this.favoriteToy}`;
-}
+        return `Playing with ${this.favoriteToy}`;
+    }
+    // let b1 = new Baby('chris', 2, 'xbox')
+    // console.log(b1.name)
+    // console.log(b1.age)
+    // b1.eat('chicken nuggies')
+    // b1.eat('mashed tatoes')
+    // console.log(b1.stomach)
+    // console.log(b1.play());
+    // b1.poop()
+    // console.log(b1.stomach)
+    // console.log(b1.toString())
+    /* 
+      TASK 4
 
-/* 
-  TASK 4
-
-  In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
-*/
+      In your own words explain the four principles for the "this" keyword below:
+      1. 
+      2. 
+      3. 
+      4. 
+    */
 
 
 ///////// END OF CHALLENGE /////////
