@@ -112,27 +112,19 @@ function Baby(name, age, favoriteToy) {
     this.favoriteToy = favoriteToy;
 }
 Baby.prototype.play = function() {
-        return `Playing with ${this.favoriteToy}`;
-    }
-    // let b1 = new Baby('chris', 2, 'xbox')
-    // console.log(b1.name)
-    // console.log(b1.age)
-    // b1.eat('chicken nuggies')
-    // b1.eat('mashed tatoes')
-    // console.log(b1.stomach)
-    // console.log(b1.play());
-    // b1.poop()
-    // console.log(b1.stomach)
-    // console.log(b1.toString())
-    /* 
-      TASK 4
+    return `Playing with ${this.favoriteToy}`;
+}
+Baby.prototype = Object.create(Person.prototype);
 
-      In your own words explain the four principles for the "this" keyword below:
-      1. 
-      2. 
-      3. 
-      4. 
-    */
+/* 
+  TASK 4
+
+  In your own words explain the four principles for the "this" keyword below:
+  1. window/global; when used in the global context this will refer to the window object, or console object if run in the console, i.e. the window the current webpages is operating in
+  2. implicit; whenever you call a function with a proceeding dot, the obj that comes before the dot is this, i.e. const me = { speak: function() { console.log('me is this'); } }; when i call me.speak(), me is this
+  3. new; when we use a constructor function to return an object, we have to use new when we declare that object, i.e. function Me() { this.speak = function() { console.log('created obj is this'); } }, when we create a new object from this const chris = new Me(); chris is this;
+  4. explicit; when we use a method to explicitly state what this is, i.e. const girvin = new Me(), chris.speak.call(girvin) even though this particular instance would have the same output, this would be binded to girvin not chris
+*/
 
 
 ///////// END OF CHALLENGE /////////
