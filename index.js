@@ -53,10 +53,6 @@ Person.prototype.eat = function(food) {
 
 Person.prototype.poop = function() {
     this.stomach = [];
-    // for (let i = this.stomach.length - 1; i > -1; i--) {
-    //     console.log(this.stomach[i]);
-    //     this.stomach.splice(i, 1);
-    // }
 }
 
 Person.prototype.toString = function() {
